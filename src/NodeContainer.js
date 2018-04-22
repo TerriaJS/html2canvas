@@ -215,7 +215,9 @@ export default class NodeContainer {
         }
     }
     getClipPaths(): Array<Path> {
-        const parentClips = this.parent ? this.parent.getClipPaths() : [];
+        // No need to clip to the parent if the parent is the root.
+        const hasParentAndParentIsNotRoot = this.parent && this.parent.parent;
+        const parentClips = hasParentAndParentIsNotRoot ? this.parent.getClipPaths() : [];
         const isClipped = this.style.overflow !== OVERFLOW.VISIBLE;
 
         return isClipped
