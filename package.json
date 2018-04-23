@@ -3,7 +3,7 @@
   "name": "html2canvas",
   "description": "Screenshots with JavaScript, forked for TerriaJS use from https://github.com/niklasvh/html2canvas",
   "main": "dist/npm/index.js",
-  "version": "1.0.0-alpha.12-terriajs",
+  "version": "1.0.0-alpha.12-terriajs-1",
   "author": {
     "name": "Niklas von Hertzen",
     "email": "niklasvh@gmail.com",
