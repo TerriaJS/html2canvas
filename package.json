@@ -1,9 +1,9 @@
 {
   "title": "html2canvas",
   "name": "html2canvas",
-  "description": "Screenshots with JavaScript",
+  "description": "Screenshots with JavaScript, forked for TerriaJS use from https://github.com/niklasvh/html2canvas",
   "main": "dist/npm/index.js",
-  "version": "1.0.0-alpha.12",
+  "version": "1.0.0-alpha.12-terriajs",
   "author": {
     "name": "Niklas von Hertzen",
     "email": "niklasvh@gmail.com",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:niklasvh/html2canvas.git"
+    "url": "git@github.com:TerriaJS/html2canvas.git"
   },
   "bugs": {
     "url": "https://github.com/niklasvh/html2canvas/issues"
