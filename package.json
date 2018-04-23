@@ -1,6 +1,6 @@
 {
-  "title": "html2canvas",
-  "name": "html2canvas",
+  "title": "terriajs-html2canvas",
+  "name": "terriajs-html2canvas",
   "description": "Screenshots with JavaScript, forked for TerriaJS use from https://github.com/niklasvh/html2canvas",
   "main": "dist/npm/index.js",
   "version": "1.0.0-alpha.12-terriajs-1",
