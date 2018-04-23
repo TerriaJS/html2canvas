@@ -554,8 +554,8 @@ const createIframeContainer = (
     cloneIframeContainer.style.left = '-10000px';
     cloneIframeContainer.style.top = '0px';
     cloneIframeContainer.style.border = '0';
-    cloneIframeContainer.width = bounds.width.toString();
-    cloneIframeContainer.height = bounds.height.toString();
+    cloneIframeContainer.width = '1'; //bounds.width.toString();
+    cloneIframeContainer.height = '1'; //bounds.height.toString();
     cloneIframeContainer.scrolling = 'no'; // ios won't scroll without it
     cloneIframeContainer.setAttribute(IGNORE_ATTRIBUTE, 'true');
     if (!ownerDocument.body) {
@@ -609,6 +609,9 @@ export const cloneWindow = (
              */
 
         const iframeLoad = iframeLoader(cloneIframeContainer).then(() => {
+            cloneIframeContainer.width = bounds.width.toString();
+            cloneIframeContainer.height = bounds.height.toString();
+
             cloner.scrolledElements.forEach(initNode);
             cloneWindow.scrollTo(bounds.left, bounds.top);
             if (
